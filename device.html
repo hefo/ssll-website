@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>SSLL | Devices</title><meta name="theme-color" content="#0a0b0b">
+  <!-- Legacy URL. Device pages now live at their own path (/fm-radio/), so this
+       forwards ?project=<slug> there and keeps older links working. -->
+  <script>
+    (function () {
+      var aliases = { "fm-receiver": "fm-radio" };
+      var slug = new URLSearchParams(location.search).get("project") || "fm-radio";
+      slug = aliases[slug] || slug;
+      location.replace(/^[a-z0-9-]+$/.test(slug) ? slug + "/" : "devices.html");
+    })();
+  </script>
+  <noscript><meta http-equiv="refresh" content="0; url=devices.html"></noscript>
+</head>
+<body></body>
+</html>

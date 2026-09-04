@@ -1,0 +1,4 @@
+.DS_Store
+
+# Master artwork and rendered deliverables: kept on disk, never published.
+assets/_src/

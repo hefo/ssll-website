@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Max for Live devices, Max patches and writing on digital signal processing, by Henrik Forssell." />
+    <meta name="theme-color" content="#0a0b0b" />
+    <title>SSLL DSP</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+    />
+    <meta property="og:site_name" content="SSLL DSP" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="SSLL DSP — Max for Live devices and signal processing" />
+    <meta property="og:description" content="Max for Live devices, Max patches and writing on digital signal processing, by Henrik Forssell." />
+    <meta property="og:url" content="https://sslldsp.com/" />
+    <meta property="og:image" content="https://sslldsp.com/assets/img/og-default.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="assets/img/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" href="assets/img/icon-192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+    <link rel="stylesheet" href="assets/css/styles.css?v=23" />
+    <script>document.documentElement.setAttribute("data-theme","dark")</script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Left rail: always visible, holds the fold-out menu trigger -->
+    <div class="rail">
+      <button class="menu-toggle" aria-expanded="false" aria-controls="drawer" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <a class="rail-mark" href="index.html">SSLL DSP</a>
+      <div class="rail-dot" aria-hidden="true"></div>
+    </div>
+
+    <!-- Fold-out menu -->
+    <nav class="drawer" id="drawer" aria-label="Main">
+      <a class="drawer-brand" href="index.html">SSLL DSP</a>
+
+      <p class="drawer-label">Work</p>
+      <div class="nav">
+        <a class="nav-link" href="devices.html">Devices</a>
+        <a class="nav-link" href="tutorials.html">Tutorials</a>
+        <a class="nav-link" href="publications.html">Publications</a>
+      </div>
+
+      <p class="drawer-label">About</p>
+      <div class="nav">
+        <a class="nav-link" href="about.html">About</a>
+      </div>
+
+      <div class="drawer-foot">
+        <a href="https://github.com/hefo" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://www.youtube.com/@ssll-dsp" target="_blank" rel="noopener">YouTube ↗</a>
+        <a href="https://www.instagram.com/ssll_dsp/" target="_blank" rel="noopener">Instagram ↗</a>
+      </div>
+    </nav>
+
+    <div class="scrim"></div>
+
+    <!-- Contact bar, top right -->
+    <div class="contact-bar">
+      <button class="icon-btn theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button>
+      <div class="contact-wrap">
+        <button class="pill primary contact-toggle" aria-expanded="false" aria-controls="contact-menu">Contact</button>
+        <div class="contact-menu" id="contact-menu">
+          <a href="mailto:henrik.forssell1@gmail.com">Email <span>↗</span></a>
+          <a href="https://github.com/hefo" target="_blank" rel="noopener">GitHub <span>↗</span></a>
+          <a href="https://www.youtube.com/@ssll-dsp" target="_blank" rel="noopener">YouTube <span>↗</span></a>
+          <a href="https://www.instagram.com/ssll_dsp/" target="_blank" rel="noopener">Instagram <span>↗</span></a>
+        </div>
+      </div>
+    </div>
+
+    <main id="main">
+      <div class="container">
+        <section class="hero home-hero">
+          <div class="home-hero-copy">
+            <h1>SSLL DSP</h1>
+          </div>
+
+          <!-- LOGO — the signal eye. Artwork ships keyed to transparency, so it
+               sits on the chassis directly; the same file is reused, smaller,
+               as the stamp at the top of every inner page. -->
+          <a class="hero-logo" href="index.html" aria-label="SSLL DSP — home">
+            <img class="eye" src="assets/img/logo-eye.png" alt="" width="800" height="388" />
+          </a>
+
+          <a class="scroll-cue" href="#feed">Latest<i aria-hidden="true"></i></a>
+        </section>
+
+        <div class="filters" role="group" aria-label="Filter the feed">
+          <button class="filter" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter" data-filter="devices" aria-pressed="false">Devices</button>
+          <button class="filter" data-filter="projects" aria-pressed="false">Projects</button>
+          <!-- Restore a filter when the feed has something under it, or it just
+               leads to an empty page:
+          <button class="filter" data-filter="tutorials" aria-pressed="false">Tutorials</button>
+          <button class="filter" data-filter="music" aria-pressed="false">Music</button>
+          <button class="filter" data-filter="writing" aria-pressed="false">Writing</button>
+          -->
+        </div>
+
+        <section class="feed" id="feed">
+          <!-- ============================================================
+               A feed entry. Copy this block, set data-cat + the date, and
+               drop it at the top of the feed for each new update. Add the
+               .details block and the Read more button when there is a longer
+               piece to expand into; leave them out for a short note.
+               Categories: devices | projects | tutorials | music | writing
+               ============================================================ -->
+
+          <article class="feed-item" data-cat="devices">
+            <p class="date">28 Aug 2026</p>
+            <div class="body">
+              <p class="tag" data-cat="devices">Devices</p>
+              <h3>The story behind FM Radio</h3>
+              <p class="summary">It started over a beer in early 2025, went by way of a conference paper in Chicago, and ended up as a Max for Live device.</p>
+              <div class="details">
+                <div>
+                  <p>Back in early 2025, while brainstorming with a friend over a beer, we started discussing FM radio as a musical effect. At the time, I was deep into Max/MSP, gen~, and Eurorack, and was looking for new DSP projects to explore.</p>
+                  <p>The next morning, I started experimenting with frequency modulation and demodulation of audio signals. After a couple of days, I had built the first version of a system for simulating FM radio transmission and reception entirely at audio rate in Max.</p>
+                  <p>Later that year, while browsing the Max Discord, I happened to come across an announcement for <a href="https://music.illinois.edu/pd-max-con/" target="_blank" rel="noopener">PdMaxCon25~</a>, a conference on Max and Pure Data with an open call for submissions. I thought it would be a good opportunity to clean up my FM radio patches and ideas and turn them into a <a href="assets/papers/forssell-2025-simulating-fm-radio-transmissions.pdf">short paper</a>. I submitted it and was very happy to find out that it was accepted.</p>
+                  <p>In September, I travelled to Chicago and the University of Illinois, where I spent a few days with fellow Max, Pd, and music-tech enthusiasts and presented the work in one of the paper sessions. If you're interested in experimenting with FM radio in Max, the DSP implementation and Max abstractions from the project are <a href="https://github.com/hefo/maxmsp/tree/main/radiofm" target="_blank" rel="noopener">available for free on my GitHub</a>.</p>
+                  <p>From early on, I also had the idea of turning the DSP system into a more user-friendly Max for Live device. That eventually became <a href="fm-radio/"><strong>FM Radio</strong></a>: a device that places up to eight virtual stations across an FM band and lets you continuously tune between them. I wanted to keep it flexible and simple to use, so audio from any track in Ableton Live can be routed to any of the eight stations. I also added some simple controls for the FM parameters and a three-band EQ, allowing you to shape the sound from clean reception to heavily distorted and noisy radio signals.</p>
+                  <p>The device is now <a href="https://ssll.gumroad.com/l/fmradio" target="_blank" rel="noopener">available on Gumroad</a>. I hope you have as much fun using it as I had building it!</p>
+                  <p class="signoff">/ Henrik</p>
+                </div>
+              </div>
+              <button class="read-more">Read more</button>
+            </div>
+          </article>
+
+          <article class="feed-item" data-cat="projects">
+            <p class="date">28 Aug 2026</p>
+            <div class="body">
+              <p class="tag" data-cat="projects">Projects</p>
+              <h3>SSLL DSP is live</h3>
+              <p class="summary">The site is up: a home for the Max for Live devices, the Max patches behind them, and the writing that comes out of building them.</p>
+              <div class="details">
+                <div>
+                  <p>This site brings together work that has been running alongside my research — Max for Live devices, the Max patches they grew out of, and the tutorials and papers that came with them.</p>
+                  <p>SSLL DSP is an independent project, so it moves at the pace of curiosity rather than deadlines. New work appears under <a href="devices.html">Devices</a> as it is finished and documented, and the writing follows when there is something worth saying about how it works.</p>
+                  <p>First up is <a href="device.html?project=fm-radio">FM Radio</a>, which puts eight stereo sources on a shared FM band and lets you tune between them.</p>
+                </div>
+              </div>
+              <button class="read-more">Read more</button>
+            </div>
+          </article>
+
+          <p class="feed-empty" hidden>Nothing here yet.</p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="social-links">
+          <a href="https://github.com/hefo" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.youtube.com/@ssll-dsp" target="_blank" rel="noopener">YouTube</a>
+          <a href="https://www.instagram.com/ssll_dsp/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+        <p>© <span id="year"></span> Henrik Forssell</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js?v=15"></script>
+  </body>
+</html>
