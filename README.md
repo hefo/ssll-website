@@ -1,6 +1,6 @@
 # SSLL DSP
 
-Source for [SSLL DSP](https://ssll.gumroad.com) — Max for Live devices, tutorials,
+Source for [ssll.fm](https://ssll.fm) — Max for Live devices, tutorials,
 publications and writing by Henrik Forssell.
 
 A static site: plain HTML, one stylesheet, two small scripts. No build step, no
@@ -26,6 +26,7 @@ assets/img/             Images, icons and share cards
 assets/papers/          Publication PDFs (naming convention in its own README)
 assets/_src/            Master artwork, gitignored and never published
 serve.py                Local preview server
+CNAME                   Custom domain for GitHub Pages
 ```
 
 ## Local preview
@@ -74,17 +75,17 @@ or returning visitors keep the old version.
 
 ## Before going live
 
-- The `og:` tags hard-code `https://sslldsp.com` as the site URL. `og:image`
-  must be absolute, so this cannot be left relative — update it everywhere once
-  the real domain is registered:
-
-  ```bash
-  grep -rl "https://sslldsp.com" *.html */index.html \
-    | xargs sed -i '' 's|https://sslldsp.com|https://YOUR-DOMAIN|g'
-  ```
-
 - `assets/_src/` is gitignored and holds the only copies of the master artwork.
   Back it up somewhere outside this repo.
+- `og:image` must be an absolute URL, so the site URL is hard-coded in every
+  page's `og:` tags. If the domain ever changes, update it everywhere:
+
+  ```bash
+  grep -rl "https://ssll.fm" *.html */index.html \
+    | xargs sed -i '' 's|https://ssll.fm|https://NEW-DOMAIN|g'
+  ```
+
+  and edit `CNAME` to match.
 
 ## Deployment
 

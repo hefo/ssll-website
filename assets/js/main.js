@@ -91,7 +91,8 @@
     links.innerHTML =
       '<a href="https://github.com/hefo" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><img src="https://cdn.simpleicons.org/github/ECEBE5" alt=""></a>' +
       '<a href="https://www.youtube.com/@ssll-dsp" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><img src="https://cdn.simpleicons.org/youtube/ECEBE5" alt=""></a>' +
-      '<a href="https://www.instagram.com/ssll_dsp/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><img src="https://cdn.simpleicons.org/instagram/ECEBE5" alt=""></a>';
+      '<a href="https://www.instagram.com/ssll_dsp/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><img src="https://cdn.simpleicons.org/instagram/ECEBE5" alt=""></a>' +
+      '<a href="https://ssll.gumroad.com" target="_blank" rel="noopener" aria-label="Gumroad" title="Gumroad"><img src="https://cdn.simpleicons.org/gumroad/ECEBE5" alt=""></a>';
   });
 
   /* ---------------------------------------------------- feed filter ---- */
