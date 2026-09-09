@@ -2,3 +2,8 @@
 
 # Master artwork and rendered deliverables: kept on disk, never published.
 assets/_src/
+
+# The FM Radio manual is its own project and is meant to be lifted out of
+# here into a repository of its own. Kept on disk, never committed to the
+# site.
+fm-radio-manual/

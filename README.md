@@ -24,6 +24,7 @@ assets/js/main.js       Top bar, feed filters, expandable posts
 assets/js/device.js     The device table, and the rendering for a device page
 assets/img/             Images, icons and share cards
 assets/papers/          Publication PDFs (naming convention in its own README)
+assets/pdf/             Device manuals, linked from a device's `manual` field
 assets/_src/            Master artwork, gitignored and never published
 serve.py                Local preview server
 CNAME                   Custom domain for GitHub Pages
@@ -46,8 +47,10 @@ to show favicons over `file://`, so the site needs to be served either way.
 1. Add an entry to `devices` in `assets/js/device.js`, keyed by slug. Only
    `name`, `type`, `summary` and `description` are required. The rest are
    optional, and each adds its own piece to the page: `heading`, `image`,
-   `backdrop`, `features`, `detail`, `demo`, `videos`, `source`, `note`, and
-   `buy` + `buyLabel` + `price` for a purchase link.
+   `backdrop`, `features`, `detail`, `demo`, `videos`, `source`, `manual`,
+   `note`, and `buy` + `buyLabel` + `price` for a purchase link. `image`,
+   `backdrop` and `manual` are paths from the site root; the rest of the
+   links are absolute URLs.
 2. Add a card to the list in `devices.html` with `data-project="<slug>"`.
 3. Copy an existing device folder, rename it to the slug, and in its
    `index.html` set `window.SSLL_PROJECT` and the title, description and
